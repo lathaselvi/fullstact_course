@@ -35,6 +35,26 @@ npm -v
 
 >> ✨ Note: The command can be executed in default terminal  (cmd in windows).
 
+### Creating new ⚛️ React project
+
+1. Download and execute the React beginner starter pack.
+
+```
+npx create-next-app
+```
+
+2. Use the below config to create the application.
+
+![Project configuration](asset\react_prj_config.png)
+
+3. To Run the App, go to the root folder , in this case the root folder is "app-name", and execute `npm run dev`
+
+👩‍💻 Terminal command :
+
+```
+> cd app-name
+> npm run dev
+```
 
 
 
