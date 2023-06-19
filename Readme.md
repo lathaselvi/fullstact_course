@@ -45,7 +45,7 @@ npx create-next-app
 
 2. Use the below config to create the application.
 
-![Project configuration](asset\react_prj_config.png)
+<img src="asset\react_prj_config.png" alt="Project configuration">
 
 3. To Run the App, go to the root folder , in this case the root folder is "app-name", and execute `npm run dev`
 
@@ -71,6 +71,10 @@ JSX, in combination with React DOM, automatically escapes values embedded in JSX
 Babel is a popular JavaScript transpiler that can transform JSX code into regular JavaScript code. By configuring Babel with the @babel/preset-react preset, JSX syntax can be transpiled into compatible JavaScript code that can be executed by browsers. Babel allows you to use modern JavaScript features and JSX syntax while ensuring backward compatibility with older browsers.
 
 > ✨ Note: Babel comes pre installed and configure with "create-next-app".
+
+### Creating and nesting components
+
+
 
 
 
