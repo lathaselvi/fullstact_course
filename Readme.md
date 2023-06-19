@@ -130,6 +130,9 @@ export default function ParentComponent() {
 
 Here we call the **ChildComponent** is nested into the **ParentComponent**.
 
+Please the referee the "FullStact_course\front_end\src\pages\component-creation.js" to get understanding component creation and nested component and how implement.
+
+<img src="asset\com-cre.png" alt="Parent and Child component" >
 
 
 

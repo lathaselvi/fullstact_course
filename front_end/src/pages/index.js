@@ -1,7 +1,12 @@
 export default function Home() {
   return (
-    <div className="main">
-     <h1>Hello World👋</h1>
+    <div>
+      <h2>List of Example</h2>
+      <li>
+        <a href="/component-creation">
+          Component Creation and Nested Component
+        </a>
+      </li>
     </div>
-  )
+  );
 }
