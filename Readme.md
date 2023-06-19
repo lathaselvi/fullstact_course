@@ -72,8 +72,63 @@ Babel is a popular JavaScript transpiler that can transform JSX code into regula
 
 > ✨ Note: Babel comes pre installed and configure with "create-next-app".
 
-### Creating and nesting components
+### Creating Components
 
+React apps are made out of components. A component is a piece of the UI (user interface) that has its own logic and appearance. A component can be as small as a button, or as large as an entire page.
+
+React components are JavaScript functions that return markup:
+
+Example
+
+```
+function MyButton() {
+  return (
+    <button>I'm a button</button>
+  );
+}
+
+```
+
+Syntax definition
+
+```
+function <function_name>() {
+  return (
+   // return markdown.
+  );
+}
+
+// or ES6 arrow function
+
+const <function_name>=()=>{
+  return (
+   // return markdown.
+  );
+}
+
+export default function_name
+
+
+```
+
+#### Nesting component
+
+Nesting refers to the practice of embedding components within other components, creating a hierarchical structure of components. This hierarchical structure is known as the component tree.
+
+Nesting components is a fundamental concept in React and allows for the composition of complex user interfaces. By breaking down the UI into smaller, reusable components, developers can organize and manage the application's structure more effectively.
+
+```
+export default function ParentComponent() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <ChildComponent />
+    </div>
+  );
+}
+```
+
+Here we call the **ChildComponent** is nested into the **ParentComponent**.
 
 
 
