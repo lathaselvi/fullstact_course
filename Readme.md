@@ -16,24 +16,25 @@ Essentially, Node.js packages the runtime state for JavaScript usage outside of 
 
 Now, we can write JavaScript not only for the browser, but also as a general programming language to write our **scripts** to **running our servers**.
 <br>
- [Referenced from www.nicknish.co](https://www.nicknish.co/blog/explain-it-like-im-5-nodejs)
-
+[Referenced from www.nicknish.co](https://www.nicknish.co/blog/explain-it-like-im-5-nodejs)
 
 ### How to install node.js ?
 
 1.  Download Node from [Link 🔗](https://nodejs.org/en). Please download the Recommended version which is stable.
 
 2.  The installed the node version "v18.16.0", to check your Node version use the command
+
 ```
 node -v
 ```
+
 3. Check If "npm" is also properly installed. To check the same run the command
 
 ```
 npm -v
 ```
 
-> ✨ Note: The command can be executed in default terminal  (cmd in windows).
+> ✨ Note: The command can be executed in default terminal (cmd in windows).
 
 ### Creating new ⚛️ React project
 
@@ -56,7 +57,7 @@ npx create-next-app
 > npm run dev
 ```
 
-### JSX 
+### JSX
 
 JSX and it is a syntax extension to JavaScript.It provides a more declarative syntax for defining React components. It resembles HTML, making it easier to read and understand the structure of the user interface.
 
@@ -134,11 +135,80 @@ Please the referee the "FullStact_course\front_end\src\pages\component-creation.
 
 <img src="asset\com-cre.png" alt="Parent and Child component" >
 
+#### Importing and Exporting components
 
+<details>
+<summary>
+Guid to know the different way to Import and Export Components.
+</summary>
+When the project grows maintaining all the component in one file is not manageable. In the above example (Parent child component example), we have exported both ParentComponent and ChildComponent, and Imported the same into the "component-creation.js" file.
 
+##### Syntax to default export a component
 
+```
+const <function name> =()=>{
+  // return statement
+}
 
+export default <function name>;
 
+```
 
+##### Syntax to import default
 
+```
+import <function name> from '<path of the file>'
+```
 
+##### Syntax to export component
+
+```
+export const <function name> =()=>{
+  // return statement
+}
+ or
+
+const <function name> =()=>{
+  // return statement
+}
+
+export {<function name>}
+
+/* here the we exporting a object with key (function name) and value (the function/component itself), as the key and value are same here we just use name directly. In case if you want to export in different name the key can changes, example */
+
+// export {<different name>:<function name>}
+
+```
+
+##### Syntax to import component
+
+```
+import {<function name>} from '<path of the file>'
+```
+
+Example of exporting multiple entities.
+
+```
+const fun1 =()=>{
+  // return statement
+}
+
+export const fun2 =()=>{
+// return statement
+}
+
+export const fun3 =()=>{
+// return statement
+}
+
+export default function1;
+
+```
+
+This how we can import those components
+
+```
+import fun1 ,{fun2,fun3} from '<file path>';
+```
+
+</details>
